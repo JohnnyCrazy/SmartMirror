@@ -1,0 +1,8 @@
+{
+    "public": {
+        "time": {
+            "twentyFourHours": true,
+            "showSeconds": true
+        }
+    }
+}
