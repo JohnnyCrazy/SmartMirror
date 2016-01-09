@@ -1,0 +1,17 @@
+<template name="help">
+    {{#contentWrapper}}
+        <div>
+            <h2 class="help-title">{{L 'help' 'title'}}<span class="help-category"></span></h2>
+            <div class="help-container">
+                <ul class="help">
+                    {{#each commands}}
+                        <li class="help-item">
+                            <b>{{cmd}}</b>
+                            <br>
+                            {{help}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    {{/contentWrapper}}
+</template>

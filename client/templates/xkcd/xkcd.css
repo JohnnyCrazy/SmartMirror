@@ -1,0 +1,14 @@
+.xkcd-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xkcd-title {
+    align-self: center;
+    text-align: center;
+}
+
+.xkcd-image {
+    max-width: 50%;
+}

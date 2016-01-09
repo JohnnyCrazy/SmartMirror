@@ -11,3 +11,7 @@ Template.registerHelper('if_eq', function(a, b, opts) {
     else
         return opts.inverse(this);
 });
+
+Template.registerHelper('L', function (namespace, str) {
+    return L.current()[namespace][str];
+});

@@ -1,6 +1,21 @@
 <template name="appLayout">
     <main id="container" style="margin-top: 20px">
         {{> time}}
-        {{> Template.dynamic template=area}}
+        {{> weather}}
+        <div class="site-container">
+            {{#momentum plugin='flow-router'}}
+                {{> Template.dynamic template=area}}
+            {{/momentum}}
+        </div>
+
+        <div class="debug-container">
+            <h4 class="debug">Some Debug Text</h4>
+        </div>
     </main>
+</template>
+
+<template name="contentWrapper">
+    <div class="frt-fixed-content-wrapper">
+        {{> UI.contentBlock}}
+    </div>
 </template>

@@ -1,0 +1,27 @@
+.weather {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    text-align: right;
+}
+
+.weather-info {
+    margin-bottom: 20px;
+}
+
+.weather-details {
+    margin-top: 0;
+}
+
+.weather-text {
+    margin-top: 0;
+}
+
+.weather-image {
+    display: inline;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

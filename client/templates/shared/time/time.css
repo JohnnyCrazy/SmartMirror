@@ -1,4 +1,14 @@
 .time {
-    text-align: center;
-    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    text-align: left;
+}
+
+.time-display {
+    margin-bottom: 20px;
+}
+
+.sub-time {
+    margin-top: 0;
 }

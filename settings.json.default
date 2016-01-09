@@ -1,8 +1,15 @@
 {
     "public": {
+        "language": "en",
         "time": {
             "twentyFourHours": true,
-            "showSeconds": true
+            "showSeconds": true,
+            "dateFormat": "DD.MM.YYYY"
+        },
+        "weather": {
+            "apiKey": "<OPEN WEATHER API KEY>",
+            "cityId": 2841178,
+            "metric": true
         }
     }
 }
