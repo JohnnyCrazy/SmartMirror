@@ -1,0 +1,50 @@
+<template name="weather">
+    {{#contentWrapper}}
+        <div>
+            {{#if getForecast}}
+                <h1 class="weather-title">{{L 'weather' 'title'}}</h1>
+
+                <div class="weather-container">
+                    <table class="weather-table" border="1">
+                        <thead>
+                        <tr>
+                            <th><i class="climacon {{getIconClass}}"></i></th>
+                            <th>00:00</th>
+                            <th>03:00</th>
+                            <th>06:00</th>
+                            <th>09:00</th>
+                            <th>12:00</th>
+                            <th>15:00</th>
+                            <th>18:00</th>
+                            <th>21:00</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each getForecast}}
+                            {{> weatherForecastRow}}
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            {{else}}
+                <h1 class="weather-title">Loading...</h1>
+            {{/if}}
+        </div>
+    {{/contentWrapper}}
+</template>
+
+<template name="weatherForecastRow">
+    <tr align="center">
+        <th>{{day}}</th>
+        {{#each weathers}}
+            {{#if this}}
+                <td>
+                    <div>{{{getIconsForWeather}}}</div>
+                    {{this.main.temp}}
+                </td>
+            {{else}}
+                <td>-</td>
+            {{/if}}
+        {{/each}}
+    </tr>
+</template>

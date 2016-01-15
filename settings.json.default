@@ -10,6 +10,7 @@
             "apiKey": "<OPEN WEATHER API KEY>",
             "cityId": 2841178,
             "metric": true
-        }
+        },
+        "news": "spiegel"
     }
 }

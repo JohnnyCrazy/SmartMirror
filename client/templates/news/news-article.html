@@ -1,0 +1,18 @@
+<template name="newsArticle">
+    {{#contentWrapper}}
+        <div>
+            {{#if getArticle}}
+                {{#with getArticle}}
+                    <div class="news-article">
+                        <h3>{{intro.title}}</h3>
+                        <p class="news-article-details">{{intro.details}}</p>
+                        <hr>
+                        <p class="news-article-text">{{{text}}}</p>
+                    </div>
+                {{/with}}
+            {{else}}
+                <h2 class="news-title">Loading...</h2>
+            {{/if}}
+        </div>
+    {{/contentWrapper}}
+</template>

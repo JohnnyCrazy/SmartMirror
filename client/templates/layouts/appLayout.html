@@ -1,15 +1,15 @@
 <template name="appLayout">
     <main id="container" style="margin-top: 20px">
         {{> time}}
-        {{> weather}}
+        {{> weatherWidget}}
         <div class="site-container">
             {{#momentum plugin='flow-router'}}
                 {{> Template.dynamic template=area}}
             {{/momentum}}
         </div>
 
-        <div class="debug-container">
-            <h4 class="debug">Some Debug Text</h4>
+        <div class="status-container">
+            <h2 class="status" style="display: none;">Hi there!</h2>
         </div>
     </main>
 </template>

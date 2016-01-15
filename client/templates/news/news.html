@@ -1,0 +1,25 @@
+<template name="news">
+    {{#contentWrapper}}
+        <div>
+            {{#if getHeadlines}}
+                {{#with getHeadlines}}
+                    <h1 class="news-title">{{name}}</h1><br>
+                    <div class="news-container">
+                        <ul>
+                            {{#each headlines}}
+                                <li class="headline">
+                                    <span class="{{#if selected}}selected{{/if}}">
+                                        <b>{{intro}}</b><br>
+                                        {{title}}
+                                    </span>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                {{/with}}
+            {{else}}
+                <h1 class="news-title">Loading...</h1>
+            {{/if}}
+        </div>
+    {{/contentWrapper}}
+</template>

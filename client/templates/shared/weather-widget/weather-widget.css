@@ -1,23 +1,23 @@
-.weather {
+.weather-widget {
     position: absolute;
     right: 40px;
     top: 0;
     text-align: right;
 }
 
-.weather-info {
+.weather-widget-info {
     margin-bottom: 20px;
 }
 
-.weather-details {
+.weather-widget-details {
     margin-top: 0;
 }
 
-.weather-text {
+.weather-widget-text {
     margin-top: 0;
 }
 
-.weather-image {
+.weather-widget-image {
     display: inline;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);

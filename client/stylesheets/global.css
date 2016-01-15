@@ -29,12 +29,23 @@ h4 {
     font-weight: 200;
 }
 
+li {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .frt-fixed-content-wrapper {
     top: 350px;
 }
 
-.debug-container {
+.status-container {
     position: absolute;
-    bottom: 20px;
-    left: 50px;
+    bottom: 100px;
+    left: 50%;
+}
+
+.status {
+    position: relative;
+    left: -50%;
 }

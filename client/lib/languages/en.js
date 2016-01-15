@@ -24,13 +24,51 @@ L["en"] = {
         showXKCD: {
             cmd: "xkcd",
             help: "Latest XKCD-Comic"
+        },
+        showWeather: {
+            cmd: "weather",
+            help: "Shows the Weater-Report (5-Days)"
+        },
+        showNews: {
+            cmd: "news",
+            help: "Shows the News-Headlines"
         }
     },
     help: {
         title: "Help"
     },
     time: {
-        days: ["Sunday", "Mondas", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    },
+    todos: {
+        numbers: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"],
+        addResponse: "Added it...",
+        delResponse: "Removed it..."
+    },
+    weather: {
+        title: "5-Day Forecast:",
+        commands: {
+            update: {
+                cmd: "update",
+                help: "Updates the weather-details"
+            }
+        }
+    },
+    news: {
+        commands: {
+            up: {
+                cmd: "up",
+                help: "Selection one up"
+            },
+            down: {
+                cmd: "down",
+                help: "Selection one down"
+            },
+            view: {
+                cmd: "view",
+                help: "View selected article"
+            }
+        }
     },
     xkcd: {
         commands: {

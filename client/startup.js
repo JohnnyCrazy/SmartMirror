@@ -42,11 +42,10 @@ Commands.delNamespace = (namespace) => {
 Commands.start = () => {
     console.log("Starting Voice-Detection...");
 
-    annyang.addCallback('resultMatch', function (userSaid, commandText, phrases) {
-
-        $('.debug').text(`Said: ${userSaid}`);
-    });
-
     annyang.setLanguage(L.current().lang);
     annyang.start();
+};
+
+SetStatus = (status, fadeout = null) => {
+    $('.status').text(status);
 };

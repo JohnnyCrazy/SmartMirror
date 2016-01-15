@@ -2,7 +2,7 @@
  * Created by Johnny on 06.01.2016.
  */
 
-let icons = {
+let climaIcons = {
     '01': 'sun',
     '02': 'cloud sun',
     '03': 'cloud',
@@ -18,38 +18,36 @@ let icons = {
 let updateWeather = () => {
     Meteor.call('getCurrentWeather', (err, res) => {
         if (err) {
-            $('.weather-text').text(`ERROR: ${err.message}`);
-            $('.weather-temp').attr('src', '');
+            $('.weather-widget-text').text(`ERROR: ${err.message}`);
+            $('.weather-widget-temp').attr('src', '');
         } else {
             let data = res.data;
-
-            console.log(data);
 
             let weatherText = data.weather.map((weather) => weather.description).join('<br>');
             let weatherIcons = data.weather.map((weather) => {
                 return {
-                    icon: icons[weather.icon.substring(0, 2)],
+                    icon: climaIcons[weather.icon.substring(0, 2)],
                     moon: weather.icon.endsWith('n')
                 };
             });
 
-            $('.weather-text').html(weatherText);
-            $('.weather-temp').text(data.main.temp);
+            $('.weather-widget-text').html(weatherText);
+            $('.weather-widget-temp').text(data.main.temp);
 
-            $('.weather-icons').html('');
+            $('.weather-widget-icons').html('');
             weatherIcons.forEach((weatherIcon) => {
-                let i = $('.weather-icons').append(`<i class=\"climacon ${weatherIcon.icon} ${weatherIcon.moon ? 'moon' : ''}\"></i> `);
+                let i = $('.weather-widget-icons').append(`<i class=\"climacon ${weatherIcon.icon} ${weatherIcon.moon ? 'moon' : ''}\"></i> `);
             });
         }
     });
 };
 
-Template.weather.onCreated(() => {
+Template.weatherWidget.onCreated(() => {
     updateWeather();
     setInterval(() => updateWeather(), 1000 * 60 * 5);
 });
 
-Template.weather.helpers({
+Template.weatherWidget.helpers({
     getIconClass() {
         return Meteor.settings.public.weather.metric ? "celsius" : "fahrenheit";
     }

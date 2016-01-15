@@ -2,6 +2,8 @@
  * Created by Johnny on 06.01.2016.
  */
 Template.appLayout.onCreated(() => {
+    let instance = Template.instance();
+
     let l = L.current();
 
     let goHome = l.commands.goHome;
@@ -23,6 +25,16 @@ Template.appLayout.onCreated(() => {
     let showXKCD = l.commands.showXKCD;
     Commands.add(showXKCD.cmd, showXKCD.help, () => {
         FlowRouter.go('/xkcd');
+    });
+
+    let showWeather = l.commands.showWeather;
+    Commands.add(showWeather.cmd, showWeather.help, () => {
+        FlowRouter.go('/weather');
+    });
+
+    let showNews = l.commands.showNews;
+    Commands.add(showNews.cmd, showNews.help, () => {
+        FlowRouter.go('/news');
     });
 
     let goBack = l.commands.goBack;
