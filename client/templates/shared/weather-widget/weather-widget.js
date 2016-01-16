@@ -42,7 +42,7 @@ let updateWeather = () => {
     });
 };
 
-Template.weatherWidget.onCreated(() => {
+Template.weatherWidget.onRendered(() => {
     updateWeather();
     setInterval(() => updateWeather(), 1000 * 60 * 5);
 });
