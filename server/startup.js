@@ -21,7 +21,7 @@ Meteor.startup(() => {
         });
 
         //Start Chromium
-        let chromium = exec(`cd ../../../../../; startChromium.sh`, (error, stdout, stderr) => {
+        let chromium = exec(`cd ../../../../../; ./startChromium.sh`, (error, stdout, stderr) => {
             console.log(`Chromium-Proc: ${stdout}`);
             console.log(`Chromium-Proc error: ${stderr}`);
             if (error !== null) {
