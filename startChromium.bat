@@ -1,1 +1,0 @@
-echo "Chromium on Windows? Go home, you're drunk"
