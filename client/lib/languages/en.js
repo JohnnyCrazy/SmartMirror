@@ -27,11 +27,15 @@ L["en"] = {
         },
         showWeather: {
             cmd: "weather",
-            help: "Shows the Weater-Report (5-Days)"
+            help: "Shows the Weather-Report (5-Days)"
         },
         showNews: {
             cmd: "news",
             help: "Shows the News-Headlines"
+        },
+        showMap: {
+            cmd: "map",
+            help: "Shows the map (e.g Route to your Work/University)"
         }
     },
     help: {
@@ -44,6 +48,15 @@ L["en"] = {
         numbers: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"],
         addResponse: "Added it...",
         delResponse: "Removed it..."
+    },
+    map: {
+        title: "Route",
+        commands: {
+            update: {
+                cmd: "update",
+                help: "Updates the current Map"
+            }
+        }
     },
     weather: {
         title: "5-Day Forecast:",

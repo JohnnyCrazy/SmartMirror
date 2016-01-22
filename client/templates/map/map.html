@@ -1,0 +1,10 @@
+<template name="map">
+    {{#contentWrapper}}
+        <div>
+            <h1 class="map-title">{{L 'map' 'title'}}</h1>
+            <div class="map-container">
+                <iframe class="map" width="{{getWidth}}" height="{{getHeight}}" frameborder="0" style="border:0;" src="{{getUrl}}" allowfullscreen></iframe>
+            </div>
+        </div>
+    {{/contentWrapper}}
+</template>

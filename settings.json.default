@@ -11,6 +11,13 @@
             "cityId": 2841178,
             "metric": true
         },
+        "map": {
+            "apiKey": "<GOOGLE EMBED MAPS API KEY",
+            "origin": "<ORIGIN FIND AT https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder>",
+            "destination": "<DESTINATION FIND AT https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder>",
+            "width": 1000,
+            "height": 1000
+        },
         "news": "spiegel"
     }
 }

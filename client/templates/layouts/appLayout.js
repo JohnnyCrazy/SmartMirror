@@ -46,6 +46,11 @@ Template.appLayout.onCreated(() => {
     Commands.add(goForward.cmd, goForward.help, () => {
         history.forward();
     });
+
+    let showMap = l.commands.showMap;
+    Commands.add(showMap.cmd, showMap.help, () => {
+        FlowRouter.go('/map');
+    });
 });
 
 Template.appLayout.onRendered(() => {
