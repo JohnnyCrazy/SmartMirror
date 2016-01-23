@@ -36,6 +36,14 @@ L["en"] = {
         showMap: {
             cmd: "map",
             help: "Shows the map (e.g Route to your Work/University)"
+        },
+        sleep: {
+            cmd: "sleep",
+            help: "Turns off HDMI"
+        },
+        wakeup: {
+            cmd: "wake up",
+            help: "Turns on HDMI"
         }
     },
     help: {

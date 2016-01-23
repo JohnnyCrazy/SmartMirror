@@ -13,8 +13,8 @@
         },
         "map": {
             "apiKey": "<GOOGLE EMBED MAPS API KEY",
-            "origin": "<ORIGIN FIND AT https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder>",
-            "destination": "<DESTINATION FIND AT https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder>",
+            "origin": "<ORIGIN FIND AT https://google-developers.appspot.com/maps/documentation/javascript/examples/full/places-placeid-finder>",
+            "destination": "<DESTINATION FIND AT https://google-developers.appspot.com/maps/documentation/javascript/examples/full/places-placeid-finder>",
             "width": 1000,
             "height": 1000
         },

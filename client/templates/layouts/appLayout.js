@@ -51,6 +51,16 @@ Template.appLayout.onCreated(() => {
     Commands.add(showMap.cmd, showMap.help, () => {
         FlowRouter.go('/map');
     });
+
+    let sleep = l.commands.sleep;
+    Commands.add(sleep.cmd, sleep.help, () => {
+        Meteor.call('sleep');
+    });
+
+    let wakeup = l.commands.wakeup;
+    Commands.add(wakeup.cmd, wakeup.help, () => {
+        Meteor.call('wakeup');
+    });
 });
 
 Template.appLayout.onRendered(() => {
